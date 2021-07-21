@@ -1,0 +1,111 @@
+package com.Challenges;
+
+public class Challenge1 {
+	public static String   GetDurationString(int min,int sec) {
+		if(min>=0 && sec>=0 && sec<=59 ) {
+			int hour=0;
+			int minutes=0;
+			int seconds=sec;
+			hour=min/60;
+			minutes=min%60;
+			return hour+"h"+" : "+minutes+"m"+" : "+sec+"s";
+		}
+		else
+		{
+			return "Invalid Value";
+		}
+		
+	}
+	
+	public static void getDurationString(int sec)
+	{
+		if(sec>=0)
+		{
+			int minutes;
+			int seconds;
+			minutes=sec/60;
+			seconds=sec%60;
+			System.out.println(getDurationString(min,sec));
+		}
+		else
+		{
+			System.out.println("Invalid Value");
+		}
+	}
+
+	   public static void main(String[] args) {
+		   getDurationString(5,30);
+		   getDurationString(4);
+		   
+		
+	}
+	
+
+}
+package com.Challenges;
+
+public class Challenge2 {
+	static double pi=3.14;
+	public static double area(double r) {
+		if(r<0) {
+			return -1.0;
+		}
+		return pi*(r*r);
+	}
+
+	public static double area(double x,double y) {
+		if(x<0&&y<0) {
+			return -1.0;
+		}
+		return x*y;
+	}
+	
+	   public static void main(String[] args) {
+		System.out.println(area(15));
+		System.out.println(area(12,14));
+	}
+}
+package com.Challenges;
+
+public class Challenge3 {
+	public static void printEqual(int x,int y, int z) {
+		if(x<0||y<0||z<0) {
+			System.out.println("Invalid value.....");
+		}else if(x==y&&x==z&&y==z)
+		{
+			System.out.println("All numbers are equal...");
+			
+		}else
+		{
+			System.out.println("All numbers are differnt......");
+		}
+		
+	}
+	public static void main(String[] args) {
+		printEqual(1,1,1);
+	}
+
+}
+
+package com.Challenges;
+
+public class Challenge4 {
+	public static boolean isCatPlaying(boolean summer,int temperature) {
+		while(summer=true) {
+		if(temperature>=25&& temperature<=35) {
+			return true;
+		}
+		 return false;
+		
+	}
+		 return false;
+   
+}
+	
+	
+	public static void main(String[] args) {
+		
+		System.out.println(isCatPlaying(true,45));
+		
+	}
+}
